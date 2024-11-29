@@ -2,7 +2,6 @@ package kg.geeks.game.logic;
 
 import kg.geeks.game.template.*;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class RPG_Game {
@@ -17,6 +16,11 @@ public class RPG_Game {
         Boss boss = new Boss("Darkness Lord", 2000, 50);
 
         Magic magic = new Magic("Gandalf", 280, 10, 5);
+
+        // Witcher
+        Witcher witcher = new Witcher("Geralt", 250);
+
+
         Warrior warrior1 = new Warrior("Lambert", 290, 10);
         Warrior warrior2 = new Warrior("Diamond", 280, 15);
         Berserk berserk = new Berserk("Trevor", 240, 10);
@@ -26,7 +30,7 @@ public class RPG_Game {
         King king = new King("King", 250, 0);
         ShapeShifter shifter = new ShapeShifter("Shang Tsung", 200, 5);
 
-        Hero[] heroes = {magic, warrior1, doc, warrior2, berserk, assistant, hacker, shifter};
+        Hero[] heroes = {magic, witcher, warrior2, warrior1, doc, warrior2, berserk, assistant, hacker, shifter};
         printStatistics(boss, heroes);
 
         while (!isGameOver(boss, heroes)) {

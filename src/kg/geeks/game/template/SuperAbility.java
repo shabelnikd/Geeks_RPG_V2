@@ -6,5 +6,6 @@ public enum SuperAbility {
     HEAL,
     BLOCK_DAMAGE_AND_REVERT,
     HACK,
-    SHIFTING
+    SHIFTING,
+    REVIVAL
 }

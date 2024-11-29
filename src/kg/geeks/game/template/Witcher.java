@@ -12,6 +12,7 @@ public class Witcher extends Hero {
                 hero.setHealth(this.getHealth());
                 this.setHealth(0);
                 System.out.println("--> Witcher saved " + hero.getName() + " and gave his life (health: " + hero.getHealth() + ")");
+                break;
             }
         }
     }
